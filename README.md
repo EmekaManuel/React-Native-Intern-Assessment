@@ -20,8 +20,6 @@ Make sure you have the following installed before running the project:
    git clone https://github.com/EmekaManuel/React-Native-Intern-Assessment.git
    cd weather-app
    npm install
+   or
+   yarn install
    ```
-
-# or
-
-yarn install
