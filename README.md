@@ -22,7 +22,7 @@ Make sure you have the following installed before running the project:
    cd weather-app
    ```
   
-2. ** Install Dependencies & Run the Application:**
+2. **Install Dependencies & Run the Application:**
    ```bash
    npm install
    or
