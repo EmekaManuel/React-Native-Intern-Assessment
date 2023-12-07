@@ -1,8 +1,9 @@
+import { LocationProps } from "@/types";
 import { Box, Text } from "@/utils/theme";
 import React, { useState } from "react";
-import { StyleSheet, TextInput, TouchableOpacity } from "react-native";
+import { TextInput, TouchableOpacity } from "react-native";
 import Icons from "../shared/Icon";
-import { LocationProps } from "@/types";
+
 interface SearchInputProps {
   showSearch?: boolean;
   handleTextDebounce?: (value: string | LocationProps) => void;
@@ -63,8 +64,3 @@ const SearchInput: React.FC<SearchInputProps> = ({
 };
 
 export default SearchInput;
-
-const styles = StyleSheet.create({});
-function handleLocation(item: Location): void {
-  throw new Error("Function not implemented.");
-}

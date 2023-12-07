@@ -36,7 +36,5 @@ export type Theme = typeof theme;
 
 export const Box = createBox<Theme>();
 export const Text = createText<Theme>();
-// export const AnimatedText = Animated.createAnimatedComponent(Text);
-// export const AnimatedBox = Animated.createAnimatedComponent(Box);
 
 export default theme;

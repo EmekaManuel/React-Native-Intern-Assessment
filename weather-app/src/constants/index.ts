@@ -1,6 +1,5 @@
-// Define the type for your weather images
 interface WeatherImages {
-  [key: string]: any; // You can replace 'any' with the actual type of your images
+  [key: string]: any;
 }
 
 export const weatherImages: WeatherImages = {

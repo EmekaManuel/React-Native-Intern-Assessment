@@ -11,6 +11,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 const FavoriteScreen = () => {
   const [bookmarks, setBookmarks] = useState<LocationProps[]>([]);
+
   useEffect(() => {
     const fetchBookmarks = async () => {
       try {
@@ -22,13 +23,8 @@ const FavoriteScreen = () => {
         console.error("Error fetching bookmarks from local storage:", error);
       }
     };
-
     fetchBookmarks();
-    const intervalId = setInterval(() => {
-      fetchBookmarks();
-    }, 3000);
-    return () => clearInterval(intervalId);
-  }, []);
+  }, [bookmarks]);
 
   return (
     <Box style={styles.container}>

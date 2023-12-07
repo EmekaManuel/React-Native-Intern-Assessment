@@ -1,4 +1,4 @@
-import { Image, SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { Image, SafeAreaView, StyleSheet } from "react-native";
 import React, { useEffect, useState } from "react";
 import { RouteProp, useRoute } from "@react-navigation/native";
 import { SearchStackParamList } from "@/navigation/types";
@@ -13,6 +13,7 @@ import DegreeTemp from "@/components/home/degree";
 import WeatherStats from "@/components/home/weather-stats";
 import Forecast from "@/components/home/forecast";
 import NavigateBack from "@/components/shared/navigate-back";
+import Loader from "@/components/shared/loader";
 
 type WeatherDataRouteProps = RouteProp<SearchStackParamList, "WeatherScreen">;
 
@@ -20,7 +21,6 @@ const WeatherScreen = () => {
   const route = useRoute<WeatherDataRouteProps>();
   const { item } = route.params;
 
-  const [showSearch, toggleSearch] = useState(false);
   const [loading, setLoading] = useState(true);
   const [weather, setWeather] = useState<WeatherDataProps>({});
 
@@ -43,6 +43,8 @@ const WeatherScreen = () => {
       console.log(data);
     });
   };
+
+  if (loading) return <Loader />;
 
   return (
     <Box style={styles.container}>

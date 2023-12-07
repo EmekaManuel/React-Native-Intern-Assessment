@@ -4,7 +4,7 @@ import React from "react";
 import { Image, StyleSheet, View } from "react-native";
 import { ForeCastItemProps } from "@/types";
 
-const ForeCastItem: React.FC<ForeCastItemProps> = ({ item, date, dayName }) => {
+const ForeCastItem: React.FC<ForeCastItemProps> = ({ item, dayName }) => {
   return (
     <View>
       <Box

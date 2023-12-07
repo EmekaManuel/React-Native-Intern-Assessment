@@ -28,5 +28,3 @@ const Location = ({ name, country }: LocationProps) => {
 };
 
 export default Location;
-
-const styles = StyleSheet.create({});

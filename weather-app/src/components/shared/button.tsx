@@ -1,5 +1,5 @@
 import { Box, Text } from "@/utils/theme";
-import { StyleSheet, TouchableOpacity } from "react-native";
+import { TouchableOpacity } from "react-native";
 
 type ButtonProps = {
   label: string;

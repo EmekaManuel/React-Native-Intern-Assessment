@@ -1,9 +1,9 @@
-import { ScrollView, StyleSheet, View } from "react-native";
-import React from "react";
+import { WeatherDataProps } from "@/types";
 import { Box, Text } from "@/utils/theme";
+import React from "react";
+import { ScrollView, StyleSheet } from "react-native";
 import Icons from "../shared/Icon";
 import ForeCastItem from "./forecastItem";
-import { WeatherDataProps } from "@/types";
 
 interface ForecastProps {
   weatherForecast: WeatherDataProps;
@@ -46,5 +46,3 @@ const Forecast: React.FC<ForecastProps> = ({ weatherForecast }) => {
 };
 
 export default Forecast;
-
-const styles = StyleSheet.create({});

@@ -1,13 +1,12 @@
 import { IWeather, LocationProps } from "@/types";
 import { BottomTabScreenProps } from "@react-navigation/bottom-tabs";
 import {
-  CompositeNavigationProp,
   CompositeScreenProps,
   NavigatorScreenParams,
 } from "@react-navigation/native";
 import {
-  NativeStackScreenProps,
   NativeStackNavigationProp,
+  NativeStackScreenProps,
 } from "@react-navigation/native-stack";
 
 export type RootBottomTabParamsList = {
@@ -18,9 +17,6 @@ export type RootBottomTabParamsList = {
 
 export type HomeStackParamList = {
   Home: undefined;
-  WeatherScreen: {
-    id: IWeather;
-  };
 };
 
 export type SearchStackParamList = {

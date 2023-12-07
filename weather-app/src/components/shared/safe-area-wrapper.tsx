@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View } from "react-native";
 import { ReactNode } from "react";
+import { StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 type SafeAreaWrapperProps = {

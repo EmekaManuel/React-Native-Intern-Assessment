@@ -1,7 +1,3 @@
-//api.weatherapi.com/v1/current.json?key=6602b188b05d4d66b08155054230306&q=London&aqi=no
-//api.weatherapi.com/v1/forecast.json?key=6602b188b05d4d66b08155054230306&q=London&days=4&aqi=no&alerts=no
-//api.weatherapi.com/v1/search.json?key=6602b188b05d4d66b08155054230306&q=Lagos
-
 import { ForecastAPIParams, LocationsAPIParams } from "@/types";
 import axios, { AxiosResponse } from "axios";
 

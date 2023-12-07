@@ -48,7 +48,6 @@ const SearchScreen = () => {
           setLocations(data);
           storeData("city", cityName);
           setIsSearchVisible(false);
-          console.log(data);
         }
       } catch (error) {
         setloading(false);

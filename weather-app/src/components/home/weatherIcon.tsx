@@ -1,9 +1,8 @@
-import { StyleSheet, View } from "react-native";
-import React from "react";
-import { Box, Text } from "@/utils/theme";
-import { Image } from "react-native";
 import { weatherImages } from "@/constants";
 import { WeatherDataProps } from "@/types";
+import { Box } from "@/utils/theme";
+import React from "react";
+import { Image, StyleSheet } from "react-native";
 
 interface WeatherIconProps {
   weatherIcon: WeatherDataProps;

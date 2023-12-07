@@ -16,7 +16,7 @@ const WeatherStats: React.FC<WeatherStatsProps> = ({ weatherStats }) => {
           source={require("../../../assets/icons/wind.png")}
         />
         <Text variant="textBase" fontWeight="600" color="lightGray">
-          {weatherStats?.current?.wind_kph}km
+          {weatherStats?.current?.wind_kph} km
         </Text>
       </Box>
       <Box flexDirection="row" gap="1" alignItems="center">
@@ -25,7 +25,7 @@ const WeatherStats: React.FC<WeatherStatsProps> = ({ weatherStats }) => {
           source={require("../../../assets/icons/drop.png")}
         />
         <Text variant="textBase" fontWeight="600" color="lightGray">
-          {weatherStats?.current?.humidity}km
+          {weatherStats?.current?.humidity} km
         </Text>
       </Box>
       <Box flexDirection="row" gap="1" alignItems="center">

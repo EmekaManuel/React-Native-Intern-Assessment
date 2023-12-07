@@ -14,7 +14,6 @@ interface LocationBoxProps {
 }
 
 const LocationBox: React.FC<LocationBoxProps> = ({ item }) => {
-  const [isBookmarked, setisBookmarked] = useState<boolean>(false);
   const navigation = useNavigation<SearchScreenNavigationType>();
   const dispatch = useDispatch();
 

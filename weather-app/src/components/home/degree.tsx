@@ -1,14 +1,14 @@
 import { WeatherDataProps } from "@/types";
 import { Box, Text } from "@/utils/theme";
 import React, { useState } from "react";
-import { StyleSheet, TouchableOpacity } from "react-native";
+import { TouchableOpacity } from "react-native";
 
 interface DegreeTempProps {
-  weather: WeatherDataProps; // Updated the prop type
+  weather: WeatherDataProps;
 }
 
 const DegreeTemp: React.FC<DegreeTempProps> = ({ weather }) => {
-  const [isCelsius, setIsCelsius] = useState(true); // Default to Celsius
+  const [isCelsius, setIsCelsius] = useState(true);
 
   const temperatureInCelsius = weather?.current?.temp_c || "";
   const temperatureInFahrenheit = weather?.current?.temp_f || "";
@@ -50,5 +50,3 @@ const DegreeTemp: React.FC<DegreeTempProps> = ({ weather }) => {
 };
 
 export default DegreeTemp;
-
-const styles = StyleSheet.create({});
