@@ -11,8 +11,8 @@ import {
 
 export type RootBottomTabParamsList = {
   HomeStack: NavigatorScreenParams<HomeStackParamList>;
-  Search: NavigatorScreenParams<SearchStackParamList>;
-  Favorites: NavigatorScreenParams<FavoritesStackParamList>;
+  SearchStack: NavigatorScreenParams<SearchStackParamList>;
+  FavoritesStack: NavigatorScreenParams<FavoritesStackParamList>;
 };
 
 export type HomeStackParamList = {
@@ -26,7 +26,7 @@ export type SearchStackParamList = {
   };
 };
 export type FavoritesStackParamList = {
-  Favorites: undefined;
+  Favorite: undefined;
   WeatherScreen: {
     item: LocationProps;
   };

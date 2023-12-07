@@ -40,7 +40,6 @@ const WeatherScreen = () => {
     }).then((data) => {
       setWeather(data);
       setLoading(false);
-      console.log(data);
     });
   };
 
