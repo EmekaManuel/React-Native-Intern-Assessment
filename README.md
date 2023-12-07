@@ -22,4 +22,9 @@ Make sure you have the following installed before running the project:
    npm install
    or
    yarn install
+
+   npm start
+   or
+   yarn start
+
    ```
