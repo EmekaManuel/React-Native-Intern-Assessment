@@ -9,6 +9,7 @@ import Icons from "@/components/shared/Icon";
 import React from "react";
 import { StyleSheet } from "react-native";
 import SearchStackNavigator from "./search-stack-navigator";
+import FavoriteStackNavigator from "./favorite-stack-navigator";
 
 const Tab = createBottomTabNavigator<RootBottomTabParamsList>();
 
@@ -37,7 +38,7 @@ const TABSCREENS = [
   },
   {
     name: "Favorites",
-    component: FavoriteScreen,
+    component: FavoriteStackNavigator,
     options: {
       title: "Bookmark",
       headerShown: false,

@@ -19,7 +19,7 @@ import NotFoundSvg from "@/components/images/notfound-svg";
 const HomeScreen: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [weather, setWeather] = useState<WeatherDataProps>({});
-  const [myCity, setMyCity] = useState<string>("Miami");
+  const [myCity, setMyCity] = useState<string>("Lagos");
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {

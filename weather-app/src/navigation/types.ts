@@ -25,11 +25,10 @@ export type SearchStackParamList = {
     item: LocationProps;
   };
 };
-
 export type FavoritesStackParamList = {
-  Weathers: undefined;
-  Weather: {
-    id: string;
+  Favorites: undefined;
+  WeatherScreen: {
+    item: LocationProps;
   };
 };
 
@@ -54,11 +53,11 @@ export type RootTabScreenProps<Screen extends keyof RootBottomTabParamsList> =
     NativeStackScreenProps<RootBottomTabParamsList>
   >;
 
-export type CategoriesNavigationType =
-  NativeStackNavigationProp<FavoritesStackParamList>;
-
 export type HomeScreenNavigationType =
   NativeStackNavigationProp<HomeStackParamList>;
 
 export type SearchScreenNavigationType =
   NativeStackNavigationProp<SearchStackParamList>;
+
+export type FavoritesScreenNavigationType =
+  NativeStackNavigationProp<FavoritesStackParamList>;

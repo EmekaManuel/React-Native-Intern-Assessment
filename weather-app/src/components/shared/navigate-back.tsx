@@ -13,7 +13,7 @@ const NavigateBack = () => {
   };
   return (
     <Pressable onPress={navigateBack}>
-      <Box bg="gray550" p="2" borderRadius="rounded-7xl">
+      <Box bg="gray9" p="2" borderRadius="rounded-2xl">
         <Entypo name="arrow-left" size={24} color={theme.colors.white} />
       </Box>
     </Pressable>
