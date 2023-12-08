@@ -50,7 +50,7 @@ Make sure you have the following installed before running the project:
 ## Application Features
    ```bash
       ✅ Use a weather API ( https://www.weatherapi.com/ ) to fetch weather data.
-      ✅ Home Screen: Displays the current weather for a default location, such as the user's current location or a predefined city.
+      ✅ Home Screen: Displays the current weather for a default location, such as the users current location or a predefined city.
       ✅ Search Screen: Allows users to search for weather information in different locations.
       ✅ Bookmarks Screen: Allows users to view weather information for saved locations.
       ✅ React Navigation: Implements navigation between the Home and Search screens using React Navigation.
@@ -62,9 +62,8 @@ Make sure you have the following installed before running the project:
       ✅ Weather Icons: Adds icons or images to represent different weather conditions.
       ✅ Favorite Locations: Implements a feature to add favorite locations and view their weather information.
       ✅ TypeScript Support: Implements the app using TypeScript for enhanced code quality and developer experience.
-      ... Dark Mode Toggle: Allows users to switch between light and dark modes.
-      ... Analytics and Error Logging: Integrates Firebase analytics and Sentry error logging for enhanced tracking and issue identification.
-
+      Dark Mode Toggle: Allows users to switch between light and dark modes.
+      Analytics and Error Logging: Integrates Firebase analytics and Sentry error logging for enhanced tracking and issue identification.
    ```
 ## Additional Notes
    ```bash
