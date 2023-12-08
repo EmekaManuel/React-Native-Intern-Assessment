@@ -47,6 +47,25 @@ Make sure you have the following installed before running the project:
       /constants: Contains the weather images 
 ```
 
+## Application Features
+   ```bash
+      ✅ Use a weather API ( https://www.weatherapi.com/ ) to fetch weather data.
+      ✅ Home Screen: Displays the current weather for a default location, such as the user's current location or a predefined city.
+      ✅ Search Screen: Allows users to search for weather information in different locations.
+      ✅ Bookmarks Screen: Allows users to view weather information for saved locations.
+      ✅ React Navigation: Implements navigation between the Home and Search screens using React Navigation.
+      ✅ Error Handling and Loading States: Implements proper error handling and loading states during data fetching.
+      ✅ Weather Information: Displays key weather information, including temperature, humidity, and weather conditions.
+      ✅ Temperature Unit Toggle: Allows users to toggle between Celsius and Fahrenheit.
+      ✅ State Management: Uses state management techniques, such as React Context or Redux, to manage the application state.
+      ✅ 3-Day Forecast: Includes a 3-day forecast on the Home screen.
+      ✅ Weather Icons: Adds icons or images to represent different weather conditions.
+      ✅ Favorite Locations: Implements a feature to add favorite locations and view their weather information.
+      ✅ TypeScript Support: Implements the app using TypeScript for enhanced code quality and developer experience.
+      ... Dark Mode Toggle: Allows users to switch between light and dark modes.
+      ... Analytics and Error Logging: Integrates Firebase analytics and Sentry error logging for enhanced tracking and issue identification.
+
+   ```
 ## Additional Notes
    ```bash
    - The app uses AsyncStorage for storing bookmarks locally.
