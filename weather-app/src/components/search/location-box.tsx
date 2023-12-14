@@ -13,13 +13,17 @@ interface LocationBoxProps {
   item: LocationProps;
 }
 
+interface RootState {
+  bookmarks: {
+    items: LocationProps[];
+  };
+}
+
 const LocationBox: React.FC<LocationBoxProps> = ({ item }) => {
   const navigation = useNavigation<SearchScreenNavigationType>();
   const dispatch = useDispatch();
 
-  const bookmarks = useSelector(
-    (state: { bookmarks: { items: LocationProps[] } }) => state.bookmarks.items
-  );
+  const bookmarks = useSelector((state: RootState) => state.bookmarks.items);
 
   const isLocationBookmarked = bookmarks.some(
     (bookmark) => bookmark.id === item.id
