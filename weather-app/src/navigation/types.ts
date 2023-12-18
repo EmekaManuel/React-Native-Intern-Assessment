@@ -13,6 +13,7 @@ export type RootBottomTabParamsList = {
   HomeStack: NavigatorScreenParams<HomeStackParamList>;
   SearchStack: NavigatorScreenParams<SearchStackParamList>;
   FavoritesStack: NavigatorScreenParams<FavoritesStackParamList>;
+  MapStack: NavigatorScreenParams<MapStackParamList>;
 };
 
 export type HomeStackParamList = {
@@ -27,6 +28,12 @@ export type SearchStackParamList = {
 };
 export type FavoritesStackParamList = {
   Favorite: undefined;
+  WeatherScreen: {
+    item: LocationProps;
+  };
+};
+export type MapStackParamList = {
+  Map: undefined;
   WeatherScreen: {
     item: LocationProps;
   };
@@ -61,3 +68,5 @@ export type SearchScreenNavigationType =
 
 export type FavoritesScreenNavigationType =
   NativeStackNavigationProp<FavoritesStackParamList>;
+export type MapScreenNavigationType =
+  NativeStackNavigationProp<MapStackParamList>;

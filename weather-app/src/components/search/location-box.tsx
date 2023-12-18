@@ -31,6 +31,7 @@ const LocationBox: React.FC<LocationBoxProps> = ({ item }) => {
 
   const navigateToWeatherScreen = () => {
     navigation.navigate("WeatherScreen", { item });
+    console.log(item);
   };
 
   const toggleBookmark = async () => {

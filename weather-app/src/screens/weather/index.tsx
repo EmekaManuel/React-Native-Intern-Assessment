@@ -1,25 +1,33 @@
-import { Image, SafeAreaView, StyleSheet } from "react-native";
-import React, { useEffect, useState } from "react";
-import { RouteProp, useRoute } from "@react-navigation/native";
+import { fetchWeatherForecast } from "@/api";
+import DegreeTemp from "@/components/home/degree";
+import Forecast from "@/components/home/forecast";
+import Location from "@/components/home/location";
+import WeatherStats from "@/components/home/weather-stats";
+import WeatherIcon from "@/components/home/weatherIcon";
+import Loader from "@/components/shared/loader";
+import NavigateBack from "@/components/shared/navigate-back";
 import { SearchStackParamList } from "@/navigation/types";
 import { WeatherDataProps } from "@/types";
 import { getData } from "@/utils/storage";
-import { fetchWeatherForecast } from "@/api";
 import { Box } from "@/utils/theme";
+import { RouteProp, useRoute } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
-import Location from "@/components/home/location";
-import WeatherIcon from "@/components/home/weatherIcon";
-import DegreeTemp from "@/components/home/degree";
-import WeatherStats from "@/components/home/weather-stats";
-import Forecast from "@/components/home/forecast";
-import NavigateBack from "@/components/shared/navigate-back";
-import Loader from "@/components/shared/loader";
+import React, { useEffect, useState } from "react";
+import { Image, SafeAreaView, StyleSheet } from "react-native";
 
-type WeatherDataRouteProps = RouteProp<SearchStackParamList, "WeatherScreen">;
+type WeatherDataRouteProps = RouteProp<
+  SearchStackParamList,
+  "WeatherScreen"
+> & {
+  coordinates: {
+    lat?: number;
+    lng?: number;
+  };
+};
 
 const WeatherScreen = () => {
   const route = useRoute<WeatherDataRouteProps>();
-  const { item } = route.params;
+  const { item, coordinates } = route.params;
 
   const [loading, setLoading] = useState(true);
   const [weather, setWeather] = useState<WeatherDataProps>({});
@@ -38,6 +46,7 @@ const WeatherScreen = () => {
       cityName,
       days: 7,
     }).then((data) => {
+      console.log(data);
       setWeather(data);
       setLoading(false);
     });

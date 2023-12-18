@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import bookmarksReducer from "./bookmark";
+import mapReducer from "./map";
 
 const store = configureStore({
   reducer: {
     bookmarks: bookmarksReducer,
+    map: mapReducer,
   },
 });
 

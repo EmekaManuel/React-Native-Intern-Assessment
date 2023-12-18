@@ -16,6 +16,11 @@ export interface LocationProps {
   };
 }
 
+export interface CityDataProps {
+  totalResults?: number;
+  articles?: string[];
+}
+
 export interface WeatherDataProps {
   location?: {
     name: string;
@@ -50,6 +55,10 @@ export interface WeatherDataProps {
       };
     }>;
   };
+  coordinates?: {
+    lat?: number;
+    lng?: number;
+  };
 }
 
 export interface ForeCastItemProps {
@@ -81,6 +90,10 @@ export interface ForeCastItemProps {
 export interface ForecastAPIParams {
   cityName: string;
   days: number;
+}
+
+export interface NewsApiParams {
+  cityName: string;
 }
 
 export interface LocationsAPIParams {

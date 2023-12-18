@@ -3,13 +3,12 @@ import HomeStackNavigator from "./home-stack-navigator";
 
 import { RootBottomTabParamsList } from "./types";
 
-import FavoriteScreen from "@/screens/favorites";
-
 import Icons from "@/components/shared/Icon";
 import React from "react";
 import { StyleSheet } from "react-native";
 import SearchStackNavigator from "./search-stack-navigator";
 import FavoriteStackNavigator from "./favorite-stack-navigator";
+import MapStackNavigator from "./map-stack-navigator";
 
 const Tab = createBottomTabNavigator<RootBottomTabParamsList>();
 
@@ -44,6 +43,17 @@ const TABSCREENS = [
       headerShown: false,
       tabBarIcon: ({ color }: { color: string }) => (
         <Icons name="favorite" color={color} />
+      ),
+    },
+  },
+  {
+    name: "MapStack",
+    component: MapStackNavigator,
+    options: {
+      title: "Maps",
+      headerShown: false,
+      tabBarIcon: ({ color }: { color: string }) => (
+        <Icons name="map" color={color} />
       ),
     },
   },
